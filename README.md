@@ -1,4 +1,4 @@
-# awesome-slop [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
+# Awesome Slop [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
 > Tools, research, and word-lists for catching and fixing **AI slop**: the tells that mark writing as machine-generated, in every language you publish in.
 
@@ -6,16 +6,15 @@ Most "AI detector" products are English-only black boxes. But AI slop is not onl
 
 ## Contents
 
-- [What is AI slop?](#what-is-ai-slop)
+- [What Is AI Slop](#what-is-ai-slop)
 - [The research](#the-research)
 - [Catch it: linters](#catch-it-linters)
 - [Detect it: classifiers](#detect-it-classifiers)
 - [Fix it: humanizers](#fix-it-humanizers)
 - [By language](#by-language)
 - [Word and phrase lists](#word-and-phrase-lists)
-- [Contributing](#contributing)
 
-## What is AI slop?
+## What Is AI Slop
 
 "Slop" is text that reads as machine-generated: a handful of over-used words, one punctuation mark, and stiff calques that show up far more often in LLM output than in anything a person writes unprompted. Readers have learned to spot it, and the moment they do, trust drops even when the substance is fine.
 
@@ -60,50 +59,41 @@ The fingerprint of AI text differs by language. Each section names the phenomeno
 
 The over-used LLM vocabulary (delve, leverage, robust, tapestry) plus the em-dash.
 
-- [slop-gate](https://github.com/hwajongpark/slop-gate), [Vale](https://github.com/errata-ai/vale), [alex](https://github.com/get-alex/alex), [proselint](https://github.com/amperser/proselint).
+- [slop-gate vocabulary pack](https://github.com/hwajongpark/slop-gate/blob/main/rules/vocabulary.json) - English LLM overuse words and phrases.
+- [slop-gate punctuation pack](https://github.com/hwajongpark/slop-gate/blob/main/rules/punctuation.json) - Punctuation tells, including the em-dash.
 
 ### Korean — 번역투
 
 Translationese: English calques (의 경우, 따라서) and stiff written-register forms. The naturalness lever in Korean editorial writing is stripping 번역투 and restoring native discourse particles.
 
-- [slop-gate korean pack](https://github.com/hwajongpark/slop-gate/blob/main/rules/korean.json), [im-not-ai](https://github.com/epoko77-ai/im-not-ai).
+- [slop-gate Korean pack](https://github.com/hwajongpark/slop-gate/blob/main/rules/korean.json) - Korean translationese patterns and suggested rewrites.
 
 ### Russian — канцелярит
 
 Bureaucratic register: the copula `является`, split-predicate verbs like `осуществить`. Kornei Chukovsky named it the central disease of the language; Maxim Ilyakhov's *Пиши, сокращай* is the canonical guide against it.
 
-- [slop-gate russian pack](https://github.com/hwajongpark/slop-gate/blob/main/rules/russian.json).
+- [slop-gate Russian pack](https://github.com/hwajongpark/slop-gate/blob/main/rules/russian.json) - Russian bureaucratic-register tells.
 
 ### Chinese — 公文腔
 
 Officialese: `进行`+noun padding, `予以`, and stock openers like `众所周知`.
 
-- [slop-gate chinese pack](https://github.com/hwajongpark/slop-gate/blob/main/rules/chinese.json).
+- [slop-gate Chinese pack](https://github.com/hwajongpark/slop-gate/blob/main/rules/chinese.json) - Chinese officialese and padding patterns.
 
 ### Vietnamese — Hán-Việt overuse
 
 Sino-Vietnamese vocabulary and calque openers (`thực hiện`, `trong trường hợp`) where plain Vietnamese is simpler.
 
-- [slop-gate vietnamese pack](https://github.com/hwajongpark/slop-gate/blob/main/rules/vietnamese.json).
+- [slop-gate Vietnamese pack](https://github.com/hwajongpark/slop-gate/blob/main/rules/vietnamese.json) - Vietnamese calque and over-formality patterns.
 
 ### Filipino
 
 Over-formal literary Tagalog and calque openers (`upang`, `sa pamamagitan ng`) where editorial Filipino is conversational Taglish.
 
-- [slop-gate filipino pack](https://github.com/hwajongpark/slop-gate/blob/main/rules/filipino.json).
+- [slop-gate Filipino pack](https://github.com/hwajongpark/slop-gate/blob/main/rules/filipino.json) - Filipino over-formality and calque patterns.
 
 ## Word and phrase lists
 
 The raw lists of tells, editable and worth reading.
 
 - [slop-gate rule packs](https://github.com/hwajongpark/slop-gate/tree/main/rules) - JSON lists of tells per language, each with a suggested fix.
-
-## Contributing
-
-Contributions are welcome: a tool, a research link, or a language section. Every entry must be a real, working resource with a one-line description, and the per-language sections especially need help from native speakers. Detectors are listed with a caution by design; humanizers are listed without endorsing detector-evasion.
-
-## License
-
-[![CC0](https://licensebuttons.net/p/zero/1.0/88x31.png)](https://creativecommons.org/publicdomain/zero/1.0/)
-
-To the extent possible under law, the maintainers have waived all copyright and related rights to this work.
