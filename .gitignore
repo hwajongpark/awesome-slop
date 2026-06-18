@@ -1,0 +1,14 @@
+# OS
+.DS_Store
+
+# Editors
+.idea/
+.vscode/
+
+# Node
+node_modules/
+*.log
+
+# Environment / secrets
+.env
+.env.*
