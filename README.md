@@ -39,6 +39,7 @@ Tools that flag specific tells in *your own* prose, locally or in CI.
 - [proselint](https://github.com/amperser/proselint) - Lints prose against a body of style-guide best practices.
 - [write-good](https://github.com/btford/write-good) - Flags weak, passive, and wordy phrasing.
 - [LanguageTool](https://languagetool.org) - Open-source grammar and style checker across many languages.
+- [Writing Style Checker](https://github.com/theserverlessdev/wsc) - Rule-based linter for AI tells: 190+ research-cited words, phrases, and structural patterns, each flag explained with its source. Web editor, CLI, GitHub Action, and MCP server. Flags style patterns; does not claim authorship detection.
 
 ## Detect it: classifiers
 
