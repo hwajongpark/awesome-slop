@@ -53,6 +53,7 @@ Tools that try to classify whether text is AI-generated. **Treat the verdicts wi
 
 Tools that remove tells, by rewriting the text or by stopping the tells at generation time. Use with judgment: the goal is clear human prose, not evading a detector.
 
+- [humanize-text](https://github.com/lynote-ai/humanize-text) - MIT-licensed Python toolkit with four reference methods and a pipeline combining LLM rewrites with cross-engine translation.
 - [im-not-ai / Humanize KR](https://github.com/epoko77-ai/im-not-ai) - Claude Code skill that rewrites AI-drafted Korean to strip 번역투 without changing the meaning.
 - [QuillBot](https://quillbot.com) - Paraphrasing and rewriting (English-focused).
 - [antislop-sampler](https://github.com/sam-paech/antislop-sampler) - Sampler that backtracks during generation to suppress thousands of known slop phrases; part of the [Antislop framework](https://arxiv.org/abs/2510.15061) (ICLR 2026).
