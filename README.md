@@ -34,6 +34,7 @@ What the tells actually are, measured at scale.
 Tools that flag specific tells in *your own* prose, locally or in CI.
 
 - [slop-gate](https://github.com/hwajongpark/slop-gate) - Zero-dependency CLI: the em-dash and ~40 English tells, plus opt-in translationese packs for Korean, Russian, Vietnamese, Chinese, and Filipino.
+- [anti-slop-kit](https://github.com/ausrine-labs/anti-slop-kit) - Twelve editorial rules plus slopcheck, a zero-dependency Python linter that flags structural tells (manufactured suspense, process narration, summary endings, stacked hedges) by line number, reading whole paragraphs so hard-wrapped tells still get caught.
 - [Vale](https://github.com/vale-cli/vale) - Customizable prose linter with style rules; the standard for docs teams.
 - [alex](https://github.com/get-alex/alex) - Catches insensitive, inconsiderate phrasing.
 - [proselint](https://github.com/amperser/proselint) - Lints prose against a body of style-guide best practices.
