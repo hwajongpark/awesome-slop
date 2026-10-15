@@ -71,6 +71,7 @@ Tools that remove tells, by rewriting the text or by stopping the tells at gener
 
 - [im-not-ai / Humanize KR](https://github.com/epoko77-ai/im-not-ai) - Claude Code skill that rewrites AI-drafted Korean to strip 번역투 without changing the meaning.
 - [antislop-sampler](https://github.com/sam-paech/antislop-sampler) - Sampler that backtracks during generation to suppress thousands of known slop phrases; part of the [Antislop framework](https://arxiv.org/abs/2510.15061) (ICLR 2026).
+- [Zero Slop](https://github.com/manavmishra/ZeroSlop) - Agent Skill that scores a draft 0-100 against 290 weighted patterns, then rewrites it under a local fact gate that rejects any version changing a name, number, quotation or link. Offline, standard-library Python, no account; `--batch --gate` also fails a build in CI.
 
 ## By language
 
