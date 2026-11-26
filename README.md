@@ -18,6 +18,7 @@ Disclosure: the maintainer of this list also maintains slop-gate, which appears 
   - [Korean (번역투)](#korean-번역투)
   - [Russian (канцелярит)](#russian-канцелярит)
   - [Chinese (公文腔)](#chinese-公文腔)
+  - [Japanese](#japanese)
   - [Vietnamese (Hán-Việt overuse)](#vietnamese-hán-việt-overuse)
   - [Filipino](#filipino)
 - [Word and phrase lists](#word-and-phrase-lists)
@@ -63,6 +64,7 @@ Tools that try to classify whether text is AI-generated. **Treat the verdicts wi
 - [GLTR](https://github.com/HendrikStrobelt/detecting-fake-text) - Early visual tool that colors each token by how predictable a language model finds it.
 - [M4](https://github.com/mbzuai-nlp/M4) - Multilingual, multi-domain, multi-generator benchmark for machine-generated text detection (EACL 2024).
 - [RAID](https://github.com/liamdugan/raid) - Benchmark of over 10 million documents across 11 models, 11 domains, and adversarial attacks for testing whether detectors generalize (ACL 2024).
+- [DetectRL-X](https://github.com/AIDC-AI/Marco-LLM/tree/main/DetectRL-X) - Benchmark of 3.46 million samples in 8 languages, including Russian, Chinese, and Arabic, that adds human text revised by an LLM as a third class (ACL 2026).
 - [Can AI-Generated Text be Reliably Detected?](https://arxiv.org/abs/2303.11156) - Sadasivan et al. (2023). Shows that recursive paraphrasing defeats many detectors and argues there are theoretical limits on reliable detection.
 
 ## Fix it: humanizers
@@ -70,6 +72,7 @@ Tools that try to classify whether text is AI-generated. **Treat the verdicts wi
 Tools that remove tells, by rewriting the text or by stopping the tells at generation time. Use with judgment: the goal is clear human prose, not evading a detector.
 
 - [im-not-ai / Humanize KR](https://github.com/epoko77-ai/im-not-ai) - Claude Code skill that rewrites AI-drafted Korean to strip 번역투 without changing the meaning.
+- [Humanizer](https://github.com/blader/humanizer) - Agent skill that rewrites English drafts against 26 patterns from Wikipedia's Signs of AI writing guide, for human readers rather than for getting past detectors.
 - [antislop-sampler](https://github.com/sam-paech/antislop-sampler) - Sampler that backtracks during generation to suppress thousands of known slop phrases; part of the [Antislop framework](https://arxiv.org/abs/2510.15061) (ICLR 2026).
 - [Zero Slop](https://github.com/manavmishra/ZeroSlop) - Agent skill that guides edits to AI-assisted drafts, with offline scoring and local checks for changes to names, numbers, quotes, and links.
 
@@ -99,6 +102,8 @@ Bureaucratic register: the copula `является`, split-predicate verbs like
 
 - [slop-gate Russian pack](https://github.com/hwajongpark/slop-gate/blob/main/rules/russian.json) - Russian bureaucratic-register tells.
 - [Нора Галь, «Слово живое и мёртвое»](https://fantlab.ru/work397792) - Catalog page for the 1972 translator's and editor's handbook whose chapters on канцелярит made it the standard reference against it.
+- [Википедия: Признаки сгенерированности текста](https://ru.wikipedia.org/wiki/Википедия:Признаки_сгенерированности_текста) - Russian Wikipedia's own guide to the tells of generated text, with Russian stock phrases and examples.
+- [humanizer-ru](https://github.com/ilyautov/humanizer-ru) - Agent skill and scanner that strips канцелярит and stock phrases from Russian text, then checks the facts against the original.
 
 ### Chinese (公文腔)
 
@@ -106,6 +111,14 @@ Officialese: `进行`+noun padding, `予以`, and stock openers like `众所周�
 
 - [slop-gate Chinese pack](https://github.com/hwajongpark/slop-gate/blob/main/rules/chinese.json) - Chinese officialese and padding patterns.
 - [地道中文怎么写？英中翻译要避免哪些坑？](https://sspai.com/post/59943) - 少数派 article with before-and-after examples of 翻译腔 and 欧化 sentence patterns, such as stray passives and English-style openers.
+- [Wikipedia:AI生成文的特徵](https://zh.wikipedia.org/wiki/Wikipedia:AI生成文的特徵) - Chinese Wikipedia's information page on the tells of AI-generated text, with Chinese stock phrases and chatbot leftovers.
+- [说人话 (shuorenhua)](https://github.com/MrGeDiao/shuorenhua) - Chinese-first agent skill that cuts filler and set phrases while keeping numbers, conditions, and the writer's voice.
+
+### Japanese
+
+Inflated headings, "not A but B" contrasts, paragraphs of the same length and tone, and leftover full-width dashes and Markdown.
+
+- [stop-ai-slop-jp](https://github.com/iKora128/stop-ai-slop-jp) - Claude skill that reviews and rewrites AI-drafted Japanese, adapted from stop-slop.
 
 ### Vietnamese (Hán-Việt overuse)
 
