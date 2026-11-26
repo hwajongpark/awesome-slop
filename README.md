@@ -44,6 +44,7 @@ What the tells actually are, measured at scale.
 Tools that flag specific tells in *your own* prose, locally or in CI.
 
 - [slop-gate](https://github.com/hwajongpark/slop-gate) - Zero-dependency CLI: the em-dash and ~40 English tells, plus opt-in translationese packs for Korean, Russian, Vietnamese, Chinese, and Filipino.
+- [Writing Style Checker](https://github.com/theserverlessdev/wsc) - Rule-based linter that flags 190+ research-cited AI tells plus weasel words, hedging, and passive voice, as a web editor, CLI, GitHub Action, and MCP server.
 - [Vale](https://github.com/vale-cli/vale) - Customizable prose linter with style rules; the standard for docs teams.
 - [alex](https://github.com/get-alex/alex) - Catches insensitive, inconsiderate phrasing.
 - [proselint](https://github.com/amperser/proselint) - Lints prose against a body of style-guide best practices.
