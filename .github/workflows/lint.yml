@@ -41,4 +41,5 @@ jobs:
             --exclude 'originality\.ai'
             --exclude 'nature\.com'
             --exclude 'licensebuttons\.net'
+            --exclude 'github\.com/hwajongpark/slop-gate/blob/'
             README.md contributing.md
